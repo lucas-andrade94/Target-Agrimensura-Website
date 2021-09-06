@@ -1,0 +1,50 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato--titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -2rem;
+    padding: 0 0 2rem 0;
+}
+
+.contato--modos {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: #888888 solid;
+}
+
+.contato--email, .contato--whatsapp, .contato--telefone, .contato--local , .contato--redesSociais {
+    font-size: 1.375rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1c1818;
+    cursor: pointer;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.contato--local {
+    display: flex;
+}
+
+.contato--icones, .contato--icones-sociais {
+    display: flex;
+    margin-right: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato--icones-sociais {
+    padding: 2rem 5rem 0 5rem;
+}
+
+.contato--localizacao {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

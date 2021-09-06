@@ -1,0 +1,30 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    background-image: url("../../assets/img/Banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: #dfdacd;
+}
+
+.banner--titulo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.banner--descricao {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner--botao {
+    font-size: 1.25rem;
+    color: black;
+    background-color: #dfdacd;
+}

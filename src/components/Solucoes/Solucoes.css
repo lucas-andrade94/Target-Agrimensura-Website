@@ -1,0 +1,76 @@
+.solucoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.solucoes--tipos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.solucoes--titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.solucoes--tipos__titulo {
+    font-size: 1.125;
+    font-weight: bold;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.solucoes--tipos__texto {
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.solucoes--tipos__geral {
+    width: 30%;
+    padding-top: 6rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin: 2rem 0 6rem 0;
+}
+
+.solucoes--tipos__lev-top-img {
+    background-position: top 0rem left 15rem;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/Solucoes/picto-topografico_classico.svg");
+}
+
+.solucoes--tipos__drones-img {
+    background-position: top 0rem left 15rem;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/Solucoes/picto-vant.svg");
+}
+
+.solucoes--tipos__asbuilt-img {
+    background-position: top -0.5rem left 14rem;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/Solucoes/asbuilt.svg");
+}
+
+.solucoes--tipos__regularizacao-img {
+    background-position: top 0rem left 15rem;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/Solucoes/picto-avaliacao_imoveis.svg");
+}
+
+.solucoes--tipos__volumetria-img {
+    background-position: top -0.5rem left 15rem;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/Solucoes/CALCULO-DE-VOLUME.svg");
+}
+
+.solucoes--tipos__demarcacao-img {
+    background-position: top 0rem left 15rem;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/img/Solucoes/picto-cadastral_geometrico.svg");
+}

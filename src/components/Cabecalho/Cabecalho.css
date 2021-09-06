@@ -1,0 +1,70 @@
+.cabecalho--container {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6%;
+    background-color: #f6f6f6;
+}
+
+.cabecalho--logo {
+    height: 5rem;
+}
+
+.cabecalho--menu {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.cabecalho--contatos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: #888888 solid;
+}
+
+.cabecalho--email, .cabecalho--whatsapp, .cabecalho--telefone, .cabecalho--redesSociais {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1c1818;
+    cursor: pointer;
+}
+
+.cabecalho--icones {
+    margin-right: 0.5rem;
+}
+
+.cabecalho--navegacao {
+    display: flex;
+    padding-left: 50%;
+    padding-right: 10%;
+    align-items: end;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cabecalho--itens {
+    display: flex;
+    text-decoration: none;
+    color: #1c1818;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    font-size: 1.125rem;
+    transition: ease-in-out 0.2s;
+}
+
+.cabecalho--itens:hover {
+    text-decoration: underline;
+    font-size: 1.25rem;
+}

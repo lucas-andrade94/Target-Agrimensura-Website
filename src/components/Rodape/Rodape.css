@@ -1,0 +1,21 @@
+.rodape {
+    color: #1c1818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape p,
+.rodape--link {
+    color: #1c1818;
+}
+
+.rodape--link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.rodape--link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,25 @@
+.clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientes--titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.clientes--logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.clientes--imagens-logos {
+    height: 150px;
+    margin: 2rem;
+}

@@ -1,0 +1,23 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.formulario--titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 0 1rem 0;
+}
+
+.formulario--campos {
+    width: 50%;
+    background-color: #f6f6f6;
+}
+
+.formulario--botao {
+    width: 20%;
+}

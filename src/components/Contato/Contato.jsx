@@ -52,7 +52,7 @@ const Contato = () => {
                         href="https://g.page/target-agrimensura?share"
                     >
                         <RoomIcon
-                            style={{ color: "black", fontSize: "2rem" }}
+                            style={{ color: "#ea4335", fontSize: "2rem" }}
                             className="contato--icones"
                         />
                         <p>

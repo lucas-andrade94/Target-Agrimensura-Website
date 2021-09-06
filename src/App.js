@@ -9,7 +9,6 @@ import Contato from "./components/Contato/Contato";
 import Formulario from "./components/Formulario/Formulario";
 
 function App() {
-    
     return (
         <section>
             <Cabecalho />
@@ -18,12 +17,16 @@ function App() {
             <Clientes />
             <Solucoes />
             <section>
-            <Contato />
-            <Formulario />
+                <Contato />
+                <Formulario aoEnviar={aoEnviarForm} />
             </section>
             <Rodape />
         </section>
     );
+}
+
+function aoEnviarForm(dados) {
+    console.log(dados)
 }
 
 export default App;

@@ -33,7 +33,10 @@
     border-bottom: #888888 solid;
 }
 
-.cabecalho--email, .cabecalho--whatsapp, .cabecalho--telefone, .cabecalho--redesSociais {
+.cabecalho--email,
+.cabecalho--whatsapp,
+.cabecalho--telefone,
+.cabecalho--redesSociais {
     display: flex;
     align-items: center;
     text-decoration: none;

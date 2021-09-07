@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Cabecalho.css";
+import { Link } from "react-scroll";
 import Logo from "../../assets/img/LOGO.png";
 import EmailIcon from "@material-ui/icons/Email";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
@@ -8,92 +9,122 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 
-const Cabecalho = () => {
-    return (
-        <header className="cabecalho--container">
-            <a href="/">
-                <img
-                    className="cabecalho--logo"
-                    src={Logo}
-                    alt="Logo Target Agrimensura"
-                />
-            </a>
-            <nav className="cabecalho--menu">
-                <div className="cabecalho--contatos">
-                    <a
-                        className="cabecalho--email"
-                        href="mailto:contato@targetagrimensura.com.br"
-                    >
-                        <EmailIcon
-                            style={{ color: "grey" }}
-                            className="cabecalho--icones"
-                        />{" "}
-                        contato@targetagrimensura.com.br
-                    </a>
-                    <a
-                        className="cabecalho--whatsapp"
-                        href="https://wa.me/5511995316146"
-                    >
-                        <WhatsAppIcon
-                            style={{ color: "#25D366" }}
-                            className="cabecalho--icones"
-                        />{" "}
-                        (11) 99531-6146
-                    </a>
-                    <a
-                        className="cabecalho--telefone"
-                        href="tel:+55114979-6921"
-                    >
-                        <PhoneIcon
-                            style={{ color: "grey" }}
-                            className="cabecalho--icones"
-                        />{" "}
-                        (11) 4979-6921
-                    </a>
-                    <div className="cabecalho--redesSociais">
+export default class Cabecalho extends Component {
+    render() {
+        return (
+            <header className="cabecalho--container">
+                <a href="/">
+                    <img
+                        className="cabecalho--logo"
+                        src={Logo}
+                        alt="Logo Target Agrimensura"
+                    />
+                </a>
+                <nav className="cabecalho--menu">
+                    <div className="cabecalho--contatos">
                         <a
-                            className="cabecalho--icones"
-                            style={{ color: "#0072b1" }}
-                            href="https://www.linkedin.com/company/target-agrimensura/"
+                            className="cabecalho--email"
+                            href="mailto:contato@targetagrimensura.com.br"
                         >
-                            <LinkedInIcon />
+                            <EmailIcon
+                                style={{ color: "grey" }}
+                                className="cabecalho--icones"
+                            />{" "}
+                            contato@targetagrimensura.com.br
                         </a>
                         <a
-                            className="cabecalho--icones"
-                            style={{ color: "#c13584" }}
-                            href="https://www.instagram.com/targetagrimensura/"
+                            className="cabecalho--whatsapp"
+                            href="https://wa.me/5511995316146"
                         >
-                            <InstagramIcon />
+                            <WhatsAppIcon
+                                style={{ color: "#25D366" }}
+                                className="cabecalho--icones"
+                            />{" "}
+                            (11) 99531-6146
                         </a>
                         <a
-                            className="cabecalho--icones"
-                            style={{ color: "#c4302b" }}
-                            href="https://www.youtube.com/channel/UCEcIei1CGnIAbpsEtuGWgLA"
+                            className="cabecalho--telefone"
+                            href="tel:+55114979-6921"
                         >
-                            <YouTubeIcon />
+                            <PhoneIcon
+                                style={{ color: "grey" }}
+                                className="cabecalho--icones"
+                            />{" "}
+                            (11) 4979-6921
+                        </a>
+                        <div className="cabecalho--redesSociais">
+                            <a
+                                className="cabecalho--icones"
+                                style={{ color: "#0072b1" }}
+                                href="https://www.linkedin.com/company/target-agrimensura/"
+                            >
+                                <LinkedInIcon />
+                            </a>
+                            <a
+                                className="cabecalho--icones"
+                                style={{ color: "#c13584" }}
+                                href="https://www.instagram.com/targetagrimensura/"
+                            >
+                                <InstagramIcon />
+                            </a>
+                            <a
+                                className="cabecalho--icones"
+                                style={{ color: "#c4302b" }}
+                                href="https://www.youtube.com/channel/UCEcIei1CGnIAbpsEtuGWgLA"
+                            >
+                                <YouTubeIcon />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="cabecalho--navegacao">
+                        <a className="cabecalho--itens">
+                            <Link to="banner" spy={true} smooth={true}>
+                                Início
+                            </Link>
+                        </a>
+                        <a className="cabecalho--itens">
+                            <Link
+                                to="quemSomos"
+                                spy={true}
+                                smooth={true}
+                                offset={-90}
+                            >
+                                Quem Somos
+                            </Link>
+                        </a>
+                        <a className="cabecalho--itens">
+                            <Link
+                                to="clientes"
+                                spy={true}
+                                smooth={true}
+                                offset={-90}
+                            >
+                                Clientes
+                            </Link>
+                        </a>
+                        <a className="cabecalho--itens">
+                            <Link
+                                to="solucoes"
+                                spy={true}
+                                smooth={true}
+                                offset={-90}
+                            >
+                                Soluções
+                            </Link>
+                        </a>
+                        <a className="cabecalho--itens">
+                            <Link
+                                to="contato"
+                                spy={true}
+                                smooth={true}
+                                offset={-150}
+                            >
+                                Contato
+                            </Link>
                         </a>
                     </div>
-                </div>
-                <div className="cabecalho--navegacao">
-                    <a className="cabecalho--itens" href="/">
-                        Início
-                    </a>
-                    <a className="cabecalho--itens" href="/quem-somos">
-                        Quem Somos
-                    </a>
-                    <a className="cabecalho--itens" href="/clientes">
-                        Clientes
-                    </a>
-                    <a className="cabecalho--itens" href="/solucoes">
-                        Soluções
-                    </a>
-                    <a className="cabecalho--itens" href="/contato">
-                        Contato
-                    </a>
-                </div>
-            </nav>
-        </header>
-    );
-};
-
-export default Cabecalho;
+                </nav>
+            </header>
+        );
+    }
+}

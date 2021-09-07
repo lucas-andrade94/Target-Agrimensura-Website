@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import "./App.css";
 import Cabecalho from "./components/Cabecalho/Cabecalho";
 import Banner from "./components/Banner/Banner";
@@ -8,25 +9,25 @@ import Solucoes from "./components/Solucoes/Solucoes";
 import Contato from "./components/Contato/Contato";
 import Formulario from "./components/Formulario/Formulario";
 
-function App() {
-    return (
-        <section>
-            <Cabecalho />
-            <Banner />
-            <QuemSomos />
-            <Clientes />
-            <Solucoes />
+export default class App extends Component {
+    render() {
+        return (
             <section>
-                <Contato />
-                <Formulario aoEnviar={aoEnviarForm} />
+                <Cabecalho />
+                <Banner />
+                <QuemSomos />
+                <Clientes />
+                <Solucoes />
+                <section>
+                    <Contato />
+                    <Formulario aoEnviar={aoEnviarForm} />
+                </section>
+                <Rodape />
             </section>
-            <Rodape />
-        </section>
-    );
+        );
+    }
 }
 
 function aoEnviarForm(dados) {
-    console.log(dados)
+    console.log(dados);
 }
-
-export default App;

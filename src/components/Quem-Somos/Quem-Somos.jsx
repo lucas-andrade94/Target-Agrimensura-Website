@@ -3,7 +3,7 @@ import "./Quem-Somos.css";
 
 const QuemSomos = () => {
     return (
-        <section className="quemSomos">
+        <section className="quemSomos" id="quemSomos">
             <h2 className="quemSomos--titulo">Quem Somos</h2>
             <div className="quemSomos--informacao">
                 <div className="quemSomos--descricao">

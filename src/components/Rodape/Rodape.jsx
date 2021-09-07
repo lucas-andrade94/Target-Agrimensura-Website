@@ -1,18 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Rodape.css";
 
-const Rodape = () => {
-    return (
-        <footer className="rodape">
-            <p>
-                Copyright &copy; 2021{" "}
-                <a href="/" className="rodape--link">
-                    Target Agrimensura
-                </a>
-                . Todos os direitos reservados.
-            </p>
-        </footer>
-    );
-};
-
-export default Rodape;
+export default class Rodape extends Component {
+    render() {
+        return (
+            <footer className="rodape">
+                <p>
+                    Copyright &copy; 2021{" "}
+                    <a href="/" className="rodape--link">
+                        Target Agrimensura
+                    </a>
+                    . Todos os direitos reservados.
+                </p>
+            </footer>
+        );
+    }
+}

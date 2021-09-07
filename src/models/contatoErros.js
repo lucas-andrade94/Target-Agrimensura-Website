@@ -24,4 +24,29 @@ function validarEmail(email) {
     }
 }
 
-export { validarNome, validarEmail };
+function validarTelefone(telefone) {
+    if (telefone.length < 10) {
+        return {
+            valido: false,
+            texto: "Insira o telefone com DDD",
+        };
+    } else {
+        return {
+            valido: true,
+            texto: "",
+        };
+    }
+}
+
+function validarMensagem(mensagem) {
+    if (mensagem.length === 0) {
+        return {
+            valido: false,
+            texto: "O campo mensagem não pode ser vazio",
+        };
+    } else {
+        return { valido: true, texto: "" };
+    }
+}
+
+export { validarNome, validarEmail, validarTelefone, validarMensagem };

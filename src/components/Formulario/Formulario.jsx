@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 import "./Formulario.css";
 import { Button, TextField } from "@material-ui/core";
-import { validarNome, validarEmail } from "../../models/contatoErros.js";
-
-function validate(campos) {
-    const errors = {};
-
-    if (!campos.email.includes("@")) {
-        errors.email = true;
-    }
-
-    if (campos.telefone.length < 10) {
-        errors.telefone = "Insira o telefone com DDD";
-    }
-
-    return errors;
-}
+import {
+    validarNome,
+    validarEmail,
+    validarTelefone,
+    validarMensagem,
+} from "../../models/contatoErros.js";
 
 const Formulario = ({ aoEnviar }) => {
     const [nome, setNome] = useState("");
@@ -24,9 +15,17 @@ const Formulario = ({ aoEnviar }) => {
     const [empresa, setEmpresa] = useState("");
     const [mensagem, setMensagem] = useState("");
     const campos = { nome, email, telefone, empresa, mensagem };
-    const [erros, setErros] = useState({
+    const [erroNome, setErroNome] = useState({
         nome: { valido: true, texto: "" },
+    });
+    const [erroEmail, setErroEmail] = useState({
         email: { valido: true, texto: "" },
+    });
+    const [erroTelefone, setErroTelefone] = useState({
+        telefone: { valido: true, texto: "" },
+    });
+    const [erroMensagem, setErroMensagem] = useState({
+        mensagem: { valido: true, texto: "" },
     });
 
     function handleFormSubmit(event) {
@@ -45,10 +44,10 @@ const Formulario = ({ aoEnviar }) => {
                 }}
                 onBlur={() => {
                     const nomeEhValido = validarNome(nome);
-                    setErros({ nome: nomeEhValido });
+                    setErroNome({ nome: nomeEhValido });
                 }}
-                error={!erros.nome.valido}
-                helperText={erros.nome.texto}
+                error={!erroNome.nome.valido}
+                helperText={erroNome.nome.texto}
                 id="nome"
                 name="nome"
                 label="Nome"
@@ -64,10 +63,10 @@ const Formulario = ({ aoEnviar }) => {
                 }}
                 onBlur={() => {
                     const emailEhValido = validarEmail(email);
-                    setErros({ email: emailEhValido });
+                    setErroEmail({ email: emailEhValido });
                 }}
-                error={!erros.email.valido}
-                helperText={erros.email.texto}
+                error={!erroEmail.email.valido}
+                helperText={erroEmail.email.texto}
                 id="email"
                 name="email"
                 label="E-mail"
@@ -81,6 +80,12 @@ const Formulario = ({ aoEnviar }) => {
                 onChange={(event) => {
                     setTelefone(event.target.value);
                 }}
+                onBlur={() => {
+                    const telefoneEhValido = validarTelefone(telefone);
+                    setErroTelefone({ telefone: telefoneEhValido });
+                }}
+                error={!erroTelefone.telefone.valido}
+                helperText={erroTelefone.telefone.texto}
                 id="telefone"
                 name="telefone"
                 label="Telefone"
@@ -106,6 +111,12 @@ const Formulario = ({ aoEnviar }) => {
                 onChange={(event) => {
                     setMensagem(event.target.value);
                 }}
+                onBlur={() => {
+                    const mensagemEhValido = validarMensagem(mensagem);
+                    setErroMensagem({ mensagem: mensagemEhValido });
+                }}
+                error={!erroMensagem.mensagem.valido}
+                helperText={erroMensagem.mensagem.texto}
                 id="mensagem"
                 name="mensagem"
                 label="Mensagem"

@@ -78,16 +78,16 @@ const Cabecalho = () => {
                     <a className="cabecalho--itens" href="/">
                         Início
                     </a>
-                    <a className="cabecalho--itens" href="#">
+                    <a className="cabecalho--itens" href="/quem-somos">
                         Quem Somos
                     </a>
-                    <a className="cabecalho--itens" href="#">
+                    <a className="cabecalho--itens" href="/clientes">
                         Clientes
                     </a>
-                    <a className="cabecalho--itens" href="#">
+                    <a className="cabecalho--itens" href="/solucoes">
                         Soluções
                     </a>
-                    <a className="cabecalho--itens" href="#">
+                    <a className="cabecalho--itens" href="/contato">
                         Contato
                     </a>
                 </div>

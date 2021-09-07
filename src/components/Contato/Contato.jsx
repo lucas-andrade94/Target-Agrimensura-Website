@@ -71,7 +71,7 @@ const Contato = () => {
                     <LinkedInIcon
                         style={{ color: "#0072b1", fontSize: "4rem" }}
                     />
-                    Instagram
+                    LinkedIn
                 </li>
                 <li
                     className="contato--icones-sociais"

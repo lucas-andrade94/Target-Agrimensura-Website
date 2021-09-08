@@ -102,7 +102,7 @@ export default class Contato extends Component {
                     width="50%"
                     height="300"
                     style={{ border: 0 }}
-                    allowfullscreen=""
+                    allowFullScreen=""
                     loading="lazy"
                 ></iframe>
             </section>

@@ -61,7 +61,7 @@ export default class Solucoes extends Component {
                         className="solucoes--tipos__geral"
                         alt="Regularização de Imóveis"
                     >
-                        <img src={ImgRegImv} height="89px" />
+                        <img src={ImgRegImv} height="89px" alt="Regularização de Imóveis"/>
                         <h3 className="solucoes--tipos__titulo">
                             Regularização de Imóveis
                         </h3>

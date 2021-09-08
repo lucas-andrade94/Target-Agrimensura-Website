@@ -8,7 +8,7 @@
 .contato--titulo {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: -2rem;
+    margin-top: 1rem;
     padding: 0 0 2rem 0;
 }
 
@@ -52,4 +52,113 @@
 .contato--localizacao {
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contato--titulo {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-top: 0;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .contato--modos {
+        flex-direction: column;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    .contato--email,
+    .contato--whatsapp,
+    .contato--telefone,
+    .contato--local,
+    .contato--redesSociais {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #1c1818;
+        cursor: pointer;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .contato--redesSociais {
+        flex-direction: column;
+    }
+
+    .contato--localizacao {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .contato--titulo {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 0;
+        padding: 1rem 0 2rem 0;
+    }
+
+    .contato--modos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato--email,
+    .contato--whatsapp,
+    .contato--telefone,
+    .contato--local,
+    .contato--redesSociais {
+        font-size: 1.125rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #1c1818;
+        cursor: pointer;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .contato--localizacao {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1350px) {
+    .contato--modos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato--email,
+    .contato--whatsapp,
+    .contato--telefone,
+    .contato--local,
+    .contato--redesSociais {
+        font-size: 1.125rem;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #1c1818;
+        cursor: pointer;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .contato--localizacao {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+
 }

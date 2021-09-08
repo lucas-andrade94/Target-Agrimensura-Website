@@ -12,16 +12,24 @@ export default class Banner extends Component {
                     Anos de experiência em Topografia para atender a sua
                     necessidade
                 </p>
-                <a className="banner--botao botao">
-                    <Link to="contato" spy={true} smooth={true} offset={-150}>
-                        Entre em contato
-                    </Link>
-                </a>
-                <a className="banner--botao botao">
-                    <Link to="solucoes" spy={true} smooth={true} offset={-90}>
-                        Nossas soluções
-                    </Link>
-                </a>
+                <Link
+                    to="contato"
+                    spy={true}
+                    smooth={true}
+                    offset={-150}
+                    className="banner--botao botao"
+                >
+                    Entre em contato
+                </Link>
+                <Link
+                    to="solucoes"
+                    spy={true}
+                    smooth={true}
+                    offset={-90}
+                    className="banner--botao botao"
+                >
+                    Nossas soluções
+                </Link>
             </section>
         );
     }

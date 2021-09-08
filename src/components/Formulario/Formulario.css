@@ -21,3 +21,23 @@
 .formulario--botao {
     width: 20%;
 }
+
+@media (max-width: 768px) {
+    .formulario--campos {
+        width: 80%;
+    }
+
+    .formulario--botao {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .formulario--campos {
+        width: 80%;
+    }
+
+    .formulario--botao {
+        width: 50%;
+    }
+}

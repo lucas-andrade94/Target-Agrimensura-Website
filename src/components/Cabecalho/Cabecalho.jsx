@@ -77,51 +77,50 @@ export default class Cabecalho extends Component {
                         </div>
                     </div>
                     <div className="cabecalho--navegacao">
-                        <a className="cabecalho--itens">
-                            <Link to="banner" spy={true} smooth={true}>
-                                Início
-                            </Link>
-                        </a>
-                        <a className="cabecalho--itens">
-                            <Link
-                                to="quemSomos"
-                                spy={true}
-                                smooth={true}
-                                offset={-90}
-                            >
-                                Quem Somos
-                            </Link>
-                        </a>
-                        <a className="cabecalho--itens">
-                            <Link
-                                to="clientes"
-                                spy={true}
-                                smooth={true}
-                                offset={-90}
-                            >
-                                Clientes
-                            </Link>
-                        </a>
-                        <a className="cabecalho--itens">
-                            <Link
-                                to="solucoes"
-                                spy={true}
-                                smooth={true}
-                                offset={-90}
-                            >
-                                Soluções
-                            </Link>
-                        </a>
-                        <a className="cabecalho--itens">
-                            <Link
-                                to="contato"
-                                spy={true}
-                                smooth={true}
-                                offset={-150}
-                            >
-                                Contato
-                            </Link>
-                        </a>
+                        <Link
+                            to="banner"
+                            spy={true}
+                            smooth={true}
+                            className="cabecalho--itens"
+                        >
+                            Início
+                        </Link>
+                        <Link
+                            to="quemSomos"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            className="cabecalho--itens"
+                        >
+                            Quem Somos
+                        </Link>
+                        <Link
+                            to="clientes"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            className="cabecalho--itens"
+                        >
+                            Clientes
+                        </Link>
+                        <Link
+                            to="solucoes"
+                            spy={true}
+                            smooth={true}
+                            offset={-90}
+                            className="cabecalho--itens"
+                        >
+                            Soluções
+                        </Link>
+                        <Link
+                            to="contato"
+                            spy={true}
+                            smooth={true}
+                            offset={-150}
+                            className="cabecalho--itens"
+                        >
+                            Contato
+                        </Link>
                     </div>
                 </nav>
             </header>

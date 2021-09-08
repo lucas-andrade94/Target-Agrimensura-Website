@@ -19,7 +19,7 @@
 }
 
 .solucoes--tipos__titulo {
-    font-size: 1.125;
+    font-size: 1.125rem;
     font-weight: bold;
     padding: 0.5rem;
     text-align: center;
@@ -32,45 +32,45 @@
 }
 
 .solucoes--tipos__geral {
+    display: flex;
+    flex-direction: column;
     width: 30%;
-    padding-top: 6rem;
+    margin: 1rem 0;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    margin: 2rem 0 6rem 0;
 }
 
-.solucoes--tipos__lev-top-img {
-    background-position: top 0rem left 15rem;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/img/Solucoes/picto-topografico_classico.svg");
+@media (max-width: 768px) {
+    .solucoes--titulo {
+        font-size: 1.75rem;
+        padding: 1rem 0;
+    }
+
+    .solucoes--tipos {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .solucoes--tipos__geral {
+        padding: 0;
+        margin: 1rem 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.solucoes--tipos__drones-img {
-    background-position: top 0rem left 15rem;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/img/Solucoes/picto-vant.svg");
-}
+@media (max-width: 1024px) {
+    .solucoes--titulo {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
 
-.solucoes--tipos__asbuilt-img {
-    background-position: top -0.5rem left 14rem;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/img/Solucoes/asbuilt.svg");
-}
-
-.solucoes--tipos__regularizacao-img {
-    background-position: top 0rem left 15rem;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/img/Solucoes/picto-avaliacao_imoveis.svg");
-}
-
-.solucoes--tipos__volumetria-img {
-    background-position: top -0.5rem left 15rem;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/img/Solucoes/CALCULO-DE-VOLUME.svg");
-}
-
-.solucoes--tipos__demarcacao-img {
-    background-position: top 0rem left 15rem;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/img/Solucoes/picto-cadastral_geometrico.svg");
+    .solucoes--tipos__geral {
+        padding: 0;
+        margin: 1rem 0;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
 }

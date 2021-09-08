@@ -97,6 +97,7 @@ export default class Contato extends Component {
                     </li>
                 </ul>
                 <iframe
+                    async
                     className="contato--localizacao"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14618.79309260869!2d-46.5353583!3d-23.6509743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa30f791b88f86e33!2sTARGET%20AGRIMENSURA%20E%20CARTOGRAFIA!5e0!3m2!1sen!2sca!4v1630701880011!5m2!1sen!2sca"
                     width="50%"

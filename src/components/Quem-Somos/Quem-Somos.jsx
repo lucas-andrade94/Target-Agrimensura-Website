@@ -32,6 +32,7 @@ const QuemSomos = () => {
                     </p>
                 </div>
                 <iframe
+                    async
                     className="quemSomos--video"
                     width="560"
                     height="315"

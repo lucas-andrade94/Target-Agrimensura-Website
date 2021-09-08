@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./Clientes.css";
-import Fonseca from "../../assets/img/Clientes/FONSECA.png";
-import GR from "../../assets/img/Clientes/GR.jpg";
-import IconRealty from "../../assets/img/Clientes/ICON-REALTY.png";
-import Mitre from "../../assets/img/Clientes/MITRE.png";
-import TCRE from "../../assets/img/Clientes/TCRE.png";
-import TR10 from "../../assets/img/Clientes/TR10.png";
-import Vertice from "../../assets/img/Clientes/VERTICE.png";
+import Fonseca from "../../assets/img/Clientes/FONSECA.webp";
+import GR from "../../assets/img/Clientes/GR.webp";
+import IconRealty from "../../assets/img/Clientes/ICON-REALTY.webp";
+import Mitre from "../../assets/img/Clientes/MITRE.webp";
+import TCRE from "../../assets/img/Clientes/TCRE.webp";
+import TR10 from "../../assets/img/Clientes/TR10.webp";
+import Vertice from "../../assets/img/Clientes/VERTICE.webp";
 
 export default class Clientes extends Component {
     render() {

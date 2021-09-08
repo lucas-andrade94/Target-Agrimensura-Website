@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Cabecalho.css";
 import { Link } from "react-scroll";
-import Logo from "../../assets/img/LOGO.png";
+import Logo from "../../assets/img/LOGO.webp";
 import EmailIcon from "@material-ui/icons/Email";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import PhoneIcon from "@material-ui/icons/Phone";

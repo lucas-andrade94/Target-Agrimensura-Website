@@ -33,3 +33,53 @@
     display: block;
     padding: 1rem 1rem;
 }
+
+@media (max-width: 768px) {
+    .quemSomos--titulo {
+        font-size: 1.75rem;
+        font-weight: bold;
+        padding: 0 0;
+    }
+    .quemSomos--informacao {
+        flex-direction: column;
+    }
+
+    .quemSomos--descricao {
+        width: 90%;
+        padding: 1rem 0;
+    }
+
+    .quemSomos--descricao p {
+        padding: 0.5rem 0;
+        font-size: 1rem
+    }
+
+    .quemSomos--video {
+        width: 100%
+    }
+}
+
+@media (max-width: 1024px) {
+    .quemSomos--titulo {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0 0;
+    }
+    .quemSomos--informacao {
+        flex-direction: column;
+    }
+
+    .quemSomos--descricao {
+        width: 90%;
+        padding: 1rem 0;
+    }
+
+    .quemSomos--descricao p {
+        padding: 0.5rem 0;
+        font-size: 1rem
+    }
+
+    .quemSomos--video {
+        width: 70%
+    }
+}

@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import "./Solucoes.css";
+import ImgLevTop from "../../assets/img/Solucoes/picto-topografico_classico.svg";
+import ImgDrone from "../../assets/img/Solucoes/picto-vant.svg";
+import ImgAsBuilt from "../../assets/img/Solucoes/asbuilt.svg";
+import ImgRegImv from "../../assets/img/Solucoes/picto-avaliacao_imoveis.svg";
+import ImgVol from "../../assets/img/Solucoes/CALCULO-DE-VOLUME.svg";
+import ImgDem from "../../assets/img/Solucoes/picto-cadastral_geometrico.svg";
 
 export default class Solucoes extends Component {
     render() {
@@ -7,7 +13,12 @@ export default class Solucoes extends Component {
             <section className="solucoes" id="solucoes">
                 <h2 className="solucoes--titulo">Soluções</h2>
                 <ul className="solucoes--tipos">
-                    <li className="solucoes--tipos__geral solucoes--tipos__lev-top-img">
+                    <li className="solucoes--tipos__geral">
+                        <img
+                            src={ImgLevTop}
+                            height="89px"
+                            alt="Levantamento Topografico"
+                        />
                         <h3 className="solucoes--tipos__titulo">
                             Levantamento Topografico
                         </h3>
@@ -19,7 +30,12 @@ export default class Solucoes extends Component {
                             arquitetura.
                         </p>
                     </li>
-                    <li className="solucoes--tipos__geral solucoes--tipos__drones-img">
+                    <li className="solucoes--tipos__geral">
+                        <img
+                            src={ImgDrone}
+                            height="89px"
+                            alt="Aerofotogrametria com Drones"
+                        />
                         <h3 className="solucoes--tipos__titulo">
                             Aerofotogrametria com drones
                         </h3>
@@ -30,7 +46,8 @@ export default class Solucoes extends Component {
                             etc.
                         </p>
                     </li>
-                    <li className="solucoes--tipos__geral solucoes--tipos__asbuilt-img">
+                    <li className="solucoes--tipos__geral ">
+                        <img src={ImgAsBuilt} height="89px" alt="As-Built" />
                         <h3 className="solucoes--tipos__titulo">
                             As Built - Cadastral Arquitetônico
                         </h3>
@@ -40,7 +57,11 @@ export default class Solucoes extends Component {
                             fachadas.
                         </p>
                     </li>
-                    <li className="solucoes--tipos__geral solucoes--tipos__regularizacao-img">
+                    <li
+                        className="solucoes--tipos__geral"
+                        alt="Regularização de Imóveis"
+                    >
+                        <img src={ImgRegImv} height="89px" />
                         <h3 className="solucoes--tipos__titulo">
                             Regularização de Imóveis
                         </h3>
@@ -51,7 +72,8 @@ export default class Solucoes extends Component {
                             lotes, dentre outros.
                         </p>
                     </li>
-                    <li className="solucoes--tipos__geral solucoes--tipos__volumetria-img">
+                    <li className="solucoes--tipos__geral ">
+                        <img src={ImgVol} height="89px" alt="Volumetria" />
                         <h3 className="solucoes--tipos__titulo">
                             Cálculo de Volumetria
                         </h3>
@@ -62,7 +84,8 @@ export default class Solucoes extends Component {
                             volume do solo ou material de interesse.
                         </p>
                     </li>
-                    <li className="solucoes--tipos__geral solucoes--tipos__demarcacao-img">
+                    <li className="solucoes--tipos__geral ">
+                        <img src={ImgDem} height="89px" alt="Demarcação" />
                         <h3 className="solucoes--tipos__titulo">Demarcação</h3>
                         <p className="solucoes--tipos__texto">
                             Demarcações de pontos de interesse, tais como,

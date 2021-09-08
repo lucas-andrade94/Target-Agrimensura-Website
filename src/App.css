@@ -30,7 +30,7 @@ body {
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
     .botao {
         padding: 1rem 2rem;
     }

@@ -26,7 +26,7 @@
 
 .quemSomos--descricao p {
     padding: 0.5rem 0;
-    font-size: 1.125rem
+    font-size: 1.125rem;
 }
 
 .quemSomos--video {
@@ -34,7 +34,7 @@
     padding: 1rem 1rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
     .quemSomos--titulo {
         font-size: 1.75rem;
         font-weight: bold;
@@ -51,15 +51,15 @@
 
     .quemSomos--descricao p {
         padding: 0.5rem 0;
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     .quemSomos--video {
-        width: 100%
+        width: 100%;
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .quemSomos--titulo {
         font-size: 2rem;
         font-weight: bold;
@@ -76,10 +76,10 @@
 
     .quemSomos--descricao p {
         padding: 0.5rem 0;
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     .quemSomos--video {
-        width: 70%
+        width: 70%;
     }
 }

@@ -24,7 +24,7 @@
     margin: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
     .clientes--titulo {
         font-size: 1.75rem;
         padding: 2rem 0 1rem 0;
@@ -36,7 +36,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .clientes--titulo {
         font-size: 2rem;
         padding: 2rem 0 1rem 0;

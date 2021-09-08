@@ -54,7 +54,7 @@
     margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
     .contato--titulo {
         font-size: 1.75rem;
         font-weight: bold;
@@ -91,10 +91,9 @@
         margin-bottom: 2rem;
         width: 100%;
     }
-
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .contato--titulo {
         font-size: 2rem;
         font-weight: bold;
@@ -129,10 +128,9 @@
         margin-bottom: 2rem;
         width: 90%;
     }
-
 }
 
-@media (max-width: 1350px) {
+@media (min-width: 1025px) and (max-width: 1350px) {
     .contato--modos {
         flex-direction: row;
         flex-wrap: wrap;
@@ -160,5 +158,4 @@
         margin-bottom: 2rem;
         width: 90%;
     }
-
 }

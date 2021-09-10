@@ -96,6 +96,10 @@
         font-size: 0.85rem;
         padding: 0.5rem 0.25rem;
     }
+
+    .cabecalho--itens:hover {
+        font-size: 0.85rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

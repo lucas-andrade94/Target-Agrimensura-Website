@@ -105,6 +105,7 @@ export default class Contato extends Component {
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
+                    title="Localização"
                 ></iframe>
             </section>
         );

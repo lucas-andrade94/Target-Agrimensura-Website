@@ -49,7 +49,7 @@ npm start
 
 
 ### Website
-https://target-agrimensura.herokuapp.com/
+https://target-agrimensura.netlify.app/
 
 
 ### Screens
